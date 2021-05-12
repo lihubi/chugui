@@ -1,0 +1,236 @@
+{
+	"easycom": {
+		// 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+		// 下载安装方式
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		// npm安装方式  
+		// "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"onReachBottomDistance":126 //距离底部多远时触发 单位px
+			}
+		}, {
+			"path": "pages/product/product",
+			"style": {
+				"navigationBarTitleText": "产品",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/consult/consult",
+			"style": {
+				"navigationBarTitleText": "查档",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/maquillage/maquillage",
+			"style": {
+				"navigationBarTitleText": "跟妆",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+
+		}
+	    ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "消息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/orderEntry/orderEntry",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单录入",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/orderComplete/orderComplete",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单录入",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/messageDetail/messageDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "消息详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/selectDresser/selectDresser",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "选择化妆师",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/appointment/appointment",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "预约来店",
+		        "enablePullDownRefresh": false
+		    }
+		  
+		
+		}
+        ,{
+            "path" : "pages/take/take",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "取件部",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/takeDetail/takeDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "取件详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+
+        ,{
+            "path" : "pages/selectPartition/selectPartition",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选择分区", 
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/orderEntry2/orderEntry2",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选择日期",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/selectlifu/selectlifu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选择礼服",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/selectShipin/selectShipin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选择饰品",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/orderSuccess/orderSuccess",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/newOrder/newOrder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": { 
+		"color": "#808080",
+		"selectedColor": "#392D40",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/icon/tarbar/home.png",
+				"selectedIconPath": "static/icon/tarbar/home_active.png"
+			},
+			{
+				"pagePath": "pages/product/product",
+				"text": "产品",
+				"iconPath": "static/icon/tarbar/product.png",
+				"selectedIconPath": "static/icon/tarbar/product_active.png"
+			},
+			{
+				"pagePath": "pages/consult/consult",
+				"text": "案例",
+				"iconPath": "static/icon/tarbar/consult.png",
+				"selectedIconPath": "static/icon/tarbar/consult_active.png"
+			},
+			// {
+			// 	"pagePath": "pages/maquillage/maquillage",
+			// 	"text": "跟妆",
+			// 	"iconPath": "static/icon/tarbar/maquillage.png",
+			// 	"selectedIconPath": "static/icon/tarbar/maquillage_active.png"
+			// },
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/icon/tarbar/mine.png",
+				"selectedIconPath": "static/icon/tarbar/mine_active.png"
+			}
+		]
+
+	}
+}
